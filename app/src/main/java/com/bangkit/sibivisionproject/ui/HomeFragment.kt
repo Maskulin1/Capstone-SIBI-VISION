@@ -1,34 +1,29 @@
 package com.bangkit.sibivisionproject.ui
 
 import android.os.Bundle
+import android.content.Intent
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.sibivisionproject.R
+import com.bangkit.sibivisionproject.adapter.NewsAdapter
+import com.bangkit.sibivisionproject.adapter.NewsData
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+    companion object {
+        val INTENT_PARCELABLE = "OBJECT_INTENT"
     }
+
+    private lateinit var newsAdapter: NewsAdapter
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var newsArrayList: ArrayList<NewsData>
+
+    lateinit var image: Array<Int>
+    lateinit var title: Array<String>
+    lateinit var descriptions: Array<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,23 +33,64 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        dataInitialize()
+        val layoutManager = LinearLayoutManager(context)
+        recyclerView = view.findViewById(R.id.recyclerview_news)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.setHasFixedSize(true)
+        recyclerView.adapter = NewsAdapter(newsArrayList){
+            val intent = Intent(context, ArticleActivity::class.java)
+            intent.putExtra(HomeFragment.INTENT_PARCELABLE, it)
+            startActivity(intent)
+        }
+    }
+    private fun dataInitialize() {
+        newsArrayList = arrayListOf<NewsData>()
+
+        image = arrayOf(
+            R.drawable.bisindo1,
+            R.drawable.bisindo2,
+            R.drawable.bisindo3,
+            R.drawable.bisindo4,
+            R.drawable.bisindo5,
+            R.drawable.bisindo6,
+            R.drawable.bisindo7,
+            R.drawable.bisindo8,
+            R.drawable.bisindo9,
+            R.drawable.bisindo10
+        )
+        title = arrayOf(
+            getString(R.string.title1),
+            getString(R.string.title2),
+            getString(R.string.title3),
+            getString(R.string.title4),
+            getString(R.string.title5),
+            getString(R.string.title6),
+            getString(R.string.title7),
+            getString(R.string.title8),
+            getString(R.string.title9),
+            getString(R.string.title10)
+        )
+        descriptions = arrayOf(
+            getString(R.string.bisindo11),
+            getString(R.string.bisindo21),
+            getString(R.string.bisindo31),
+            getString(R.string.bisindo41),
+            getString(R.string.bisindo51),
+            getString(R.string.bisindo61),
+            getString(R.string.bisindo71),
+            getString(R.string.bisindo81),
+            getString(R.string.bisindo91),
+            getString(R.string.bisindo101)
+            )
+
+        for (i in image.indices) {
+
+            val news = NewsData(image[i],title[i], descriptions[i])
+            newsArrayList.add(news)
+        }
     }
 }

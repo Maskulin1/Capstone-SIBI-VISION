@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.SplashScreenActivity">
 
     <ImageView
@@ -19,7 +20,7 @@
 
     <ImageView
         android:id="@+id/logo_splash"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginBottom="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,13 +30,19 @@
         app:srcCompat="@drawable/logosibi" />
 
     <TextView
-        android:id="@+id/tv_judul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tv_judul"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="16sp"
         android:textColor="@color/color_utama"
-        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="180dp"
+        android:text="Health Innovation: Empowering Vulnerable  Communities for Health and Well-being"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_splash" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
