@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +16,23 @@
         android:theme="@style/Theme.SibiVisionProject"
         tools:targetApi="31">
         <activity
+            android:name=".TranslationResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.InformationAppsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HelpdeskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,10 +44,11 @@
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.ArticleActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>

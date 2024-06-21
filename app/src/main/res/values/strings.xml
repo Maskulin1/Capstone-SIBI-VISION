@@ -8,7 +8,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
     <string-array name="data_image">
         <item>@drawable/bisindo1</item>
         <item>@drawable/bisindo2</item>
@@ -22,16 +21,16 @@
         <item>@drawable/bisindo10</item>
     </string-array>
 
-        <string name="title1">British Sign Language - Alpha Academy</string>
-        <string name="title2">How Deaf People Learn to Speak</string>
-        <string name="title3">Sign Language With Kids</string>
-        <string name="title4">Man Sign Language teaching</string>
-        <string name="title5">The Advantages of Knowing ASL as a Speech Language Pathologist</string>
-        <string name="title6">Sign Language : Translation without Written Words</string>
-        <string name="title7">Hands Sign Language Circle</string>
-        <string name="title8">Close Up Senior Man Sign Language</string>
-        <string name="title9">The Why Factor, Sign Language</string>
-        <string name="title10">American Sign Language</string>
+    <string name="title1">British Sign Language - Alpha Academy</string>
+    <string name="title2">How Deaf People Learn to Speak</string>
+    <string name="title3">Sign Language With Kids</string>
+    <string name="title4">Man Sign Language teaching</string>
+    <string name="title5">The Advantages of Knowing ASL as a Speech Language Pathologist</string>
+    <string name="title6">Sign Language : Translation without Written Words</string>
+    <string name="title7">Hands Sign Language Circle</string>
+    <string name="title8">Close Up Senior Man Sign Language</string>
+    <string name="title9">The Why Factor, Sign Language</string>
+    <string name="title10">American Sign Language</string>
 
     <string-array name="data_detail">
         <item></item>
@@ -46,17 +45,21 @@
         <item></item>
     </string-array>
 
-        <string name="bisindo11">American Sign Language (ASL) and British Sign Language (BSL) use different signs, although some words and phrases may be very similar. ASL uses one hand, whereas with BSL. British Sign Language (BSL) is a sign language used in the United Kingdom and is the first or preferred language among the deaf community in the UK. </string>
-        <string name="bisindo21">You can start learning ASL by attending a sign language class. Sign language classes can be found at community colleges, universities, libraries, churches, organizations/clubs of the deaf, and lots of other places. Deaf people are *visual* people, not aural people.</string>
-        <string name="bisindo31">Say the words slowly and clearly as you make the signs. Words for objects are the easiest to start with because you can immediately show what your sign means. Practice signing to your baby often and ask other caregivers to sign to them as well. The more exposure they get the more likely they will begin to sign.</string>
-        <string name="bisindo41">Baby signs and gestures can be a great tool to help parents and caregivers support early communication skills. You can use baby signs to teach your child to communicate their wants and needs to you. Infant signs and gestures can be taught to young children to help develop their communication skills.</string>
-        <string name="bisindo51">sign language gives children the ability to communicate their needs and wants from a young age, which helps them develop better social and communication skills. Children who learn sign language have been shown to have higher self-confidence and self-esteem than those who do not learn sign language.</string>
-        Translation of text to sign language is also be given as a task during sign language study session. This tool can easily produce the correct answers and because the visual stays on screen, students can follow the hand movements at their own pace.
-        This is how you sign the word “Hands” in ASL. Utilize the pinkie-edge of the right "B" handshape to metaphorically "slice off" the non-dominant hand. Following that, employ the left "B" handshape to similarly slice off the dominant hand.
-        <string name="bisindo61">sign language, any means of communication through bodily movements, especially of the hands and arms, used when spoken communication is impossible or not desirable. The practice is probably older than speech.</string>
-        <string name="bisindo71">Lee Kumutat explores why deaf people are divided on the significance of Sign Language</string>
-        <string name="bisindo81">American Sign Language (ASL) is a complete, natural language that has the same linguistic properties as spoken languages, with grammar that differs from English.</string>
-        <string name="bisindo91">Bisindo is visual communication, of course expression plays a big role in enlivening the atmosphere of conversation. By studying BISINDO you can train and enrich your expression. Believe it or not, Sign Language can help balance the development of the left and right brain and increase intelligence!</string>
-        <string name="bisindo101">The Indonesian Sign Language System (SIBI) caused disputes between the Deaf Community, including the Indonesian Movement for the Welfare of the Deaf (Gerkatin), and the SIBI Dictionary formulation team. The Gerkatin Central Executive Board raised this issue for joint discussion at the sixth Gerkatin National Congress in Bali in 2002. Based on the decision of the National Congress, the name Indonesian Sign Language was officially established and then shortened to Bisindo with the aim of maintaining natural sign language.
+    <string name="bisindo11">American Sign Language (ASL) and British Sign Language (BSL) use different signs, although some words and phrases may be very similar. ASL uses one hand, whereas with BSL. British Sign Language (BSL) is a sign language used in the United Kingdom and is the first or preferred language among the deaf community in the UK. </string>
+    <string name="bisindo21">You can start learning ASL by attending a sign language class. Sign language classes can be found at community colleges, universities, libraries, churches, organizations/clubs of the deaf, and lots of other places. Deaf people are *visual* people, not aural people.</string>
+    <string name="bisindo31">Say the words slowly and clearly as you make the signs. Words for objects are the easiest to start with because you can immediately show what your sign means. Practice signing to your baby often and ask other caregivers to sign to them as well. The more exposure they get the more likely they will begin to sign.</string>
+    <string name="bisindo41">Baby signs and gestures can be a great tool to help parents and caregivers support early communication skills. You can use baby signs to teach your child to communicate their wants and needs to you. Infant signs and gestures can be taught to young children to help develop their communication skills.</string>
+    <string name="bisindo51">sign language gives children the ability to communicate their needs and wants from a young age, which helps them develop better social and communication skills. Children who learn sign language have been shown to have higher self-confidence and self-esteem than those who do not learn sign language.</string>
+    Translation of text to sign language is also be given as a task during sign language study
+    session. This tool can easily produce the correct answers and because the visual stays on
+    screen, students can follow the hand movements at their own pace.
+    This is how you sign the word “Hands” in ASL. Utilize the pinkie-edge of the right "B" handshape
+    to metaphorically "slice off" the non-dominant hand. Following that, employ the left "B"
+    handshape to similarly slice off the dominant hand.
+    <string name="bisindo61">sign language, any means of communication through bodily movements, especially of the hands and arms, used when spoken communication is impossible or not desirable. The practice is probably older than speech.</string>
+    <string name="bisindo71">Lee Kumutat explores why deaf people are divided on the significance of Sign Language</string>
+    <string name="bisindo81">American Sign Language (ASL) is a complete, natural language that has the same linguistic properties as spoken languages, with grammar that differs from English.</string>
+    <string name="bisindo91">Bisindo is visual communication, of course expression plays a big role in enlivening the atmosphere of conversation. By studying BISINDO you can train and enrich your expression. Believe it or not, Sign Language can help balance the development of the left and right brain and increase intelligence!</string>
+    <string name="bisindo101">The Indonesian Sign Language System (SIBI) caused disputes between the Deaf Community, including the Indonesian Movement for the Welfare of the Deaf (Gerkatin), and the SIBI Dictionary formulation team. The Gerkatin Central Executive Board raised this issue for joint discussion at the sixth Gerkatin National Congress in Bali in 2002. Based on the decision of the National Congress, the name Indonesian Sign Language was officially established and then shortened to Bisindo with the aim of maintaining natural sign language.
             Then, to strengthen the status of sign language as a language, Gerkatin began collaborating with The Center for Sign Linguistics and Deaf Studies, The Chinese University of Hong Kong and the Faculty of Cultural Sciences, University of Indonesia. Deaf representatives in every region throughout Indonesia also asked to immediately establish a forum for sign language development and research at the Gerkatin National Congress in Makassar in 2006. In the end, the Indonesian Sign Language Center (Pusbisindo) was inaugurated at the First National Working Meeting in 2009 in Jakarta.</string>
 </resources>
