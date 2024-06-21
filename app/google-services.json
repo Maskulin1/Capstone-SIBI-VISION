@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "358316929876",
+    "project_id": "sibivisionproject",
+    "storage_bucket": "sibivisionproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358316929876:android:7bda58d5f226aa67994ec1",
+        "android_client_info": {
+          "package_name": "com.bangkit.sibivisionproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_WNImrxFwG6G1uu8dRsMkdRA5iOafazA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
